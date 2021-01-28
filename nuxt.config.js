@@ -1,6 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
-export default {
+/** @type {import('@nuxt/types').NuxtOptions} */
+const config = {
+  srcDir: 'app',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - nuxt-composition-api-sample',
@@ -66,3 +68,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
+
+export default config
