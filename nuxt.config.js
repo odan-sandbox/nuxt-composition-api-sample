@@ -42,6 +42,18 @@ const config = {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: 'http://localhost:3000/api',
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: 'http://localhost:3000/api',
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   serverMiddleware: [{ path: '/api', handler: '~/api/index.ts' }],
