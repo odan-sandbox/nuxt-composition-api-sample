@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
 
 /** @type {import('@nuxt/types').NuxtOptions} */
 const config = {
@@ -67,6 +67,7 @@ const config = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+  serverMiddleware: [{ path: '/api', handler: '~/api/index.ts' }],
+};
 
-export default config
+export default config;
